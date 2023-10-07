@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 750px;
+        background-color: #003a63;}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #79c0ef;
+      height: 100%;
+    }
+        
+    /* On small screens, set height to 'auto' for the grid */
+    @media screen and (max-width: 767px) {
+      .row.content {height: auto;
+        background-color: #a7c7ff;} 
+    }
+    table {
+            border-collapse: collapse;
+        }
+td:hover {
+            background-color: #79c0ef;
+        }
+tr:nth-child(even) {
+  background-color: #b9ddf6;
+}
+tr:nth-child(odd) {
+  background-color: #c9dfef;
+}
+th {
+            border: 1.5px solid #79c0ef;
+            padding: 8px;
+            text-align: left;
+            background-color: #b3daf5;
+        }
+td {
+            border: 1.5px solid #79c0ef;
+            padding: 8px;
+            text-align: left;
+        }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <h1>Cochin Port Authority</h1>
+        <h1>VESSEL SURVEILLANCE SYSTEM</h1>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">Today's Schedule</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="#">Drone Telemetry</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav hidden-xs">
+        <h2>Cochin Port Authority</h2>
+        <h1>VESSEL SURVEILLANCE SYSTEM</h1>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Dashboard</a></li>
+        <li><a href="#section2">Today's Schedule</a></li>
+        <li><a href="#section3">Alerts</a></li>
+        <li><a href="#section3">Drone Telemetry</a></li>
+        <li><a href="#section3">Powered By Hawk Eyes</a></li>
+      </ul><br>
+    </div>
+    <br>
+    
+    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="well" style="background-color: #dca7f9; border-radius: 15px;">
+            <h4>Docked Ships</h4>
+            <p>2380</p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well" style="background-color: #dca7f9; border-radius: 15px;">
+            <h4>Active Drones</h4>
+            <p>4</p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well" style="background-color: #dca7f9; border-radius: 15px;">
+            <h4>Suspicious Vessels</h4>
+            <p>23</p> 
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="well" style="background-color: #dca7f9; border-radius: 15px;">
+            <h4>Drone Battery</h4>
+            <p>63%</p> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="well" style="background-color: #f9a7ba; border-radius: 15px;">
+            <h1 style="color: #575757;">Live Visuals</h1>
+            <img style="border-radius: 10px;" src="/video_feed" alt="Video Feed">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="well" style="background-color: #f9a7ba; border-radius: 15px;">
+            <h1 style="color: #575757;">Database</h1>
+        <table>
+            <tr>
+                <th>ETA</th>
+                <th>VESSEL</th>
+                <th>IMO</th>
+                <th>COUNTRY</th>
+            </tr>
+            <tr>
+                <td>6:10</td>
+                <td>Apinya Naree</td>
+                <td>9421271</td>
+                <td>Norway</td>
+            </tr>
+            <tr>
+                <td>7:30</td>
+                <td>Eva Diamond</td>
+                <td>9864576</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Concord</td>
+                <td>9875240</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>9:50</td>
+                <td>Coatlique</td>
+                <td>9714161</td>
+                <td>Brazil</td>
+            </tr>
+            <tr>
+                <td>11:20</td>
+                <td>Acadia Park</td>
+                <td>9608398</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Fei Pu</td>
+                <td>9419606</td>
+                <td>Norway</td>
+            </tr>
+            <tr>
+                <td>18:50</td>
+                <td>Ark Prestige</td>
+                <td>9721516</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>6:10</td>
+                <td>Apinya Naree</td>
+                <td>9421271</td>
+                <td>Norway</td>
+            </tr>
+            <tr>
+                <td>7:30</td>
+                <td>Eva Diamond</td>
+                <td>9864576</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>9:00</td>
+                <td>Concord</td>
+                <td>9875240</td>
+                <td>London</td>
+            </tr>
+            <!-- Add more rows here if needed -->
+        </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
